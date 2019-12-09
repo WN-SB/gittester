@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="4186931e-e0f6-4cec-8f2a-4eff741f2444" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Audits_LoadElevated TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4186931e-e0f6-4cec-8f2a-4eff741f2444fileName">Audits_LoadElevated-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="583acc90-b002-4506-9e48-b33897bc10bd" name="Audits_LoadElevated">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>Audits_LoadElevated</con:operation>
+      <con:request name="Audits_LoadElevated" id="1373ff13-e312-4dde-b4e6-78a37d1de0af">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:Audits_LoadElevated>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:EntityCode>?</prag:EntityCode>\r
+         <!--Optional:-->\r
+         <prag:Where>?</prag:Where>\r
+         <!--Optional:-->\r
+         <prag:OrderBy>?</prag:OrderBy>\r
+      </prag:Audits_LoadElevated>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/Audits_LoadElevated"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

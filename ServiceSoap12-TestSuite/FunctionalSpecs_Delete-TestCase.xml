@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="7639a3c0-3daf-4bd7-a97b-4a5cad389d0e" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="FunctionalSpecs_Delete TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7639a3c0-3daf-4bd7-a97b-4a5cad389d0efileName">FunctionalSpecs_Delete-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="6f9e4f82-ef57-418a-8fcd-573799c15f8d" name="FunctionalSpecs_Delete">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>FunctionalSpecs_Delete</con:operation>
+      <con:request name="FunctionalSpecs_Delete" id="87e2ceb0-2d33-48bc-b631-fb0f293e914b">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:FunctionalSpecs_Delete>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <prag:FunctionalSpecId>?</prag:FunctionalSpecId>\r
+      </prag:FunctionalSpecs_Delete>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/FunctionalSpecs_DeleteRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

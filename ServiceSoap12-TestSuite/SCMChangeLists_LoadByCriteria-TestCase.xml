@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f9e20dd4-51e7-4d12-80b1-082e01853cf4" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SCMChangeLists_LoadByCriteria TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f9e20dd4-51e7-4d12-80b1-082e01853cf4fileName">SCMChangeLists_LoadByCriteria-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="c87a3622-4d5e-483e-a4e1-c68d2dab5ead" name="SCMChangeLists_LoadByCriteria">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>SCMChangeLists_LoadByCriteria</con:operation>
+      <con:request name="SCMChangeLists_LoadByCriteria" id="28b98127-897a-4ef8-9740-5032929f2e3c">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:SCMChangeLists_LoadByCriteria>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Condition>?</prag:Condition>\r
+         <!--Optional:-->\r
+         <prag:Sorting>?</prag:Sorting>\r
+         <prag:PageSize>?</prag:PageSize>\r
+         <prag:PageNumber>?</prag:PageNumber>\r
+      </prag:SCMChangeLists_LoadByCriteria>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/SCMChangeLists_LoadByCriteriaRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="0c73870e-971a-40f6-89c7-376ec5b4b1a8" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestSets_Delete TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0c73870e-971a-40f6-89c7-376ec5b4b1a8fileName">TestSets_Delete-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="8c56343d-e5f4-4e46-9002-658ab31622c4" name="TestSets_Delete">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>TestSets_Delete</con:operation>
+      <con:request name="TestSets_Delete" id="4c1a0c33-cc50-4c6a-a8ea-a7104e40f5f8">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:TestSets_Delete>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <prag:TestSetId>?</prag:TestSetId>\r
+      </prag:TestSets_Delete>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/TestSets_Delete"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

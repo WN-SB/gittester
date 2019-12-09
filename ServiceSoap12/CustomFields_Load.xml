@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="c99d6118-2ca7-4ce1-b295-312f3162ea49" isOneWay="false" action="http://www.pragmaticsw.com/CustomFields_Load" name="CustomFields_Load" bindingOperationName="CustomFields_Load" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c99d6118-2ca7-4ce1-b295-312f3162ea49fileName">CustomFields_Load</con:setting>
+  </con:settings>
+  <con:call id="69d198a7-1fbb-48df-a592-d79f8741460c" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:CustomFields_Load>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Entity>?</prag:Entity>\r
+      </prag:CustomFields_Load>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/CustomFields_LoadRequest"/>
+  </con:call>
+</con:operation>

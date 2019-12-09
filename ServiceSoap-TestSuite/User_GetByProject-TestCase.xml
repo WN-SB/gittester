@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="40387f8a-a2e4-4a86-b62c-499856ff84d2" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="User_GetByProject TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="40387f8a-a2e4-4a86-b62c-499856ff84d2fileName">User_GetByProject-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="385f12df-844e-42e7-a058-56203ad4391c" name="User_GetByProject">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>User_GetByProject</con:operation>
+      <con:request name="User_GetByProject" id="0676da5c-2ce8-4df1-b9c9-a41fbf600b46">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:User_GetByProject>\r
+         <!--Optional:-->\r
+         <prag:authData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:authData>\r
+      </prag:User_GetByProject>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/User_GetByProject"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

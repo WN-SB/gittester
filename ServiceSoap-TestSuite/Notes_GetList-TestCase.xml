@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d8da6db0-a8f0-49c0-bfa5-d897a43a476c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Notes_GetList TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d8da6db0-a8f0-49c0-bfa5-d897a43a476cfileName">Notes_GetList-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="e2ecafe1-965a-4be7-8661-1cf788ce92c7" name="Notes_GetList">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>Notes_GetList</con:operation>
+      <con:request name="Notes_GetList" id="1ccc5d86-c96b-4463-a8cc-d14e3d6e1efe">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:Notes_GetList>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:EntityCode>?</prag:EntityCode>\r
+         <prag:FKId>?</prag:FKId>\r
+      </prag:Notes_GetList>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/Notes_GetList"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

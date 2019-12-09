@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="68a25525-5dab-4d9d-86f3-2ba2189e3730" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TraceabilityLinks_Delete TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="68a25525-5dab-4d9d-86f3-2ba2189e3730fileName">TraceabilityLinks_Delete-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="02bfbe7d-ba1a-43f3-aee0-793920e894b9" name="TraceabilityLinks_Delete">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>TraceabilityLinks_Delete</con:operation>
+      <con:request name="TraceabilityLinks_Delete" id="4026c1ed-dfc3-46c3-ab04-249a74ab1dea">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:TraceabilityLinks_Delete>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:TraceabilityLink>\r
+            <prag:LinkId>?</prag:LinkId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <!--Optional:-->\r
+            <prag:EntityCode>?</prag:EntityCode>\r
+            <prag:FKId>?</prag:FKId>\r
+            <!--Optional:-->\r
+            <prag:LinkedEntityCode>?</prag:LinkedEntityCode>\r
+            <prag:LinkedFKId>?</prag:LinkedFKId>\r
+            <!--Optional:-->\r
+            <prag:Status>?</prag:Status>\r
+            <!--Optional:-->\r
+            <prag:Title>?</prag:Title>\r
+            <!--Optional:-->\r
+            <prag:LinkType>?</prag:LinkType>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+         </prag:TraceabilityLink>\r
+      </prag:TraceabilityLinks_Delete>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/TraceabilityLinks_DeleteRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

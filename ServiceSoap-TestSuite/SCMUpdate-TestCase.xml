@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a87c2750-9e38-4690-885f-dfe1364817dd" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SCMUpdate TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a87c2750-9e38-4690-885f-dfe1364817ddfileName">SCMUpdate-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="4d36323e-a4bf-4b09-80b6-7ec771fc5d56" name="SCMUpdate">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>SCMUpdate</con:operation>
+      <con:request name="SCMUpdate" id="488c4a74-7f93-4b76-be12-5df8191c17df">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:SCMUpdate>\r
+         <!--Optional:-->\r
+         <prag:userId>?</prag:userId>\r
+         <!--Optional:-->\r
+         <prag:passCode>?</prag:passCode>\r
+         <!--Optional:-->\r
+         <prag:appCode>?</prag:appCode>\r
+         <!--Optional:-->\r
+         <prag:commentText>?</prag:commentText>\r
+         <!--Optional:-->\r
+         <prag:author>?</prag:author>\r
+         <!--Optional:-->\r
+         <prag:revision>?</prag:revision>\r
+         <!--Optional:-->\r
+         <prag:filePath>?</prag:filePath>\r
+      </prag:SCMUpdate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/SCMUpdate"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

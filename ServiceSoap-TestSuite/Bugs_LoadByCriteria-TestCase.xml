@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="cd758af3-1227-470a-9286-bf3db08ecf82" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Bugs_LoadByCriteria TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cd758af3-1227-470a-9286-bf3db08ecf82fileName">Bugs_LoadByCriteria-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="998ef98a-f50b-4b94-94d6-0ccb98440eee" name="Bugs_LoadByCriteria">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>Bugs_LoadByCriteria</con:operation>
+      <con:request name="Bugs_LoadByCriteria" id="3f7d994f-e86b-45f6-9edd-e3f147504ae3">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:Bugs_LoadByCriteria>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Condition>?</prag:Condition>\r
+         <!--Optional:-->\r
+         <prag:Sorting>?</prag:Sorting>\r
+         <prag:PageSize>?</prag:PageSize>\r
+         <prag:PageNumber>?</prag:PageNumber>\r
+      </prag:Bugs_LoadByCriteria>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/Bugs_LoadByCriteria"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

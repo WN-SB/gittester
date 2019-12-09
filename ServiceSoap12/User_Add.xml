@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="adc66151-91d9-4310-b763-8a4da0cc4b12" isOneWay="false" action="http://www.pragmaticsw.com/User_Add" name="User_Add" bindingOperationName="User_Add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="adc66151-91d9-4310-b763-8a4da0cc4b12fileName">User_Add</con:setting>
+  </con:settings>
+  <con:call id="a2f01c7c-0094-48e2-85d0-64582d87e527" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:User_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:User>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:FirstName>?</prag:FirstName>\r
+            <!--Optional:-->\r
+            <prag:LastName>?</prag:LastName>\r
+            <!--Optional:-->\r
+            <prag:Email>?</prag:Email>\r
+            <!--Optional:-->\r
+            <prag:SecurityGroup>?</prag:SecurityGroup>\r
+            <!--Optional:-->\r
+            <prag:Password>?</prag:Password>\r
+            <!--Optional:-->\r
+            <prag:TimeZone>?</prag:TimeZone>\r
+         </prag:User>\r
+      </prag:User_Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/User_AddRequest"/>
+  </con:call>
+</con:operation>

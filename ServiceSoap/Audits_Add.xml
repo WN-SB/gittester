@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="f380a4a6-ae8a-4716-90f6-3f9a06fe4ef7" isOneWay="false" action="http://www.pragmaticsw.com/Audits_Add" name="Audits_Add" bindingOperationName="Audits_Add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f380a4a6-ae8a-4716-90f6-3f9a06fe4ef7fileName">Audits_Add</con:setting>
+  </con:settings>
+  <con:call id="658804b4-f89f-40f2-88e1-e08310a6e57c" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:Audits_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Audit>\r
+            <prag:FKId>?</prag:FKId>\r
+            <!--Optional:-->\r
+            <prag:EntityCode>?</prag:EntityCode>\r
+            <!--Optional:-->\r
+            <prag:Title>?</prag:Title>\r
+            <!--Optional:-->\r
+            <prag:OldValue>?</prag:OldValue>\r
+            <!--Optional:-->\r
+            <prag:NewValue>?</prag:NewValue>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <!--Optional:-->\r
+            <prag:Description>?</prag:Description>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <!--Optional:-->\r
+            <prag:UserName>?</prag:UserName>\r
+         </prag:Audit>\r
+      </prag:Audits_Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/Audits_Add"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d72ee782-4c47-4c15-a3ec-8f5ec810be60" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetLoginInfo TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d72ee782-4c47-4c15-a3ec-8f5ec810be60fileName">GetLoginInfo-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="9e3de751-5da7-422e-9099-18434e354f37" name="GetLoginInfo">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>GetLoginInfo</con:operation>
+      <con:request name="GetLoginInfo" id="a004384c-69bf-4e6d-9a94-b49612e17424">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:GetLoginInfo>\r
+         <!--Optional:-->\r
+         <prag:AppCode>?</prag:AppCode>\r
+         <!--Optional:-->\r
+         <prag:Email>?</prag:Email>\r
+         <!--Optional:-->\r
+         <prag:Password>?</prag:Password>\r
+      </prag:GetLoginInfo>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/GetLoginInfoRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

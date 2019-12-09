@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8b124c55-c738-41af-b868-914a7d21585f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestRunResults_LoadByCriteria TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8b124c55-c738-41af-b868-914a7d21585ffileName">TestRunResults_LoadByCriteria-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="618a88c8-10c6-439a-b7cc-d038b803a6ce" name="TestRunResults_LoadByCriteria">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>TestRunResults_LoadByCriteria</con:operation>
+      <con:request name="TestRunResults_LoadByCriteria" id="6c5cbbc1-3010-40ae-98b2-d97b75eee36a">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:TestRunResults_LoadByCriteria>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Condition>?</prag:Condition>\r
+         <!--Optional:-->\r
+         <prag:Sorting>?</prag:Sorting>\r
+         <prag:PageSize>?</prag:PageSize>\r
+         <prag:PageNumber>?</prag:PageNumber>\r
+      </prag:TestRunResults_LoadByCriteria>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/TestRunResults_LoadByCriteriaRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

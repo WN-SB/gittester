@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a08f7667-fd4e-4a43-9778-c0c414d925b4" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="LookUps_Update TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a08f7667-fd4e-4a43-9778-c0c414d925b4fileName">LookUps_Update-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="59ad1157-eaf6-4c55-813e-824a1927e823" name="LookUps_Update">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>LookUps_Update</con:operation>
+      <con:request name="LookUps_Update" id="f3beca78-07da-4846-9182-57862b005a37">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:LookUps_Update>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Entity>?</prag:Entity>\r
+         <!--Optional:-->\r
+         <prag:LookUp>\r
+            <!--Optional:-->\r
+            <prag:Type>?</prag:Type>\r
+            <!--Optional:-->\r
+            <prag:Description>?</prag:Description>\r
+            <!--Optional:-->\r
+            <prag:Values>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:string>?</prag:string>\r
+            </prag:Values>\r
+         </prag:LookUp>\r
+      </prag:LookUps_Update>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/LookUps_UpdateRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

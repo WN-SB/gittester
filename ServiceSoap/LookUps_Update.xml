@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5892a22c-ac67-416c-bb65-899cdd09e956" isOneWay="false" action="http://www.pragmaticsw.com/LookUps_Update" name="LookUps_Update" bindingOperationName="LookUps_Update" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5892a22c-ac67-416c-bb65-899cdd09e956fileName">LookUps_Update</con:setting>
+  </con:settings>
+  <con:call id="76faf44c-f9cb-4314-8d11-3b3bdfad1cd8" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:LookUps_Update>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Entity>?</prag:Entity>\r
+         <!--Optional:-->\r
+         <prag:LookUp>\r
+            <!--Optional:-->\r
+            <prag:Type>?</prag:Type>\r
+            <!--Optional:-->\r
+            <prag:Description>?</prag:Description>\r
+            <!--Optional:-->\r
+            <prag:Values>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:string>?</prag:string>\r
+            </prag:Values>\r
+         </prag:LookUp>\r
+      </prag:LookUps_Update>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/LookUps_Update"/>
+  </con:call>
+</con:operation>

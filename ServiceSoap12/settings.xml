@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="f31af3b5-77f3-4c41-859d-85ff5df35c0f" wsaVersion="NONE" name="ServiceSoap12" type="wsdl" bindingName="{http://www.pragmaticsw.com/}ServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://soap.qacomplete.smartbear.com/psWS.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f31af3b5-77f3-4c41-859d-85ff5df35c0ffileName">ServiceSoap12</con:setting>
+  </con:settings>
+  <con:definitionCache/>
+  <con:endpoints>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+  </con:endpoints>
+</con:interface>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="32d57947-2d38-4840-b714-b7667befbebf" isOneWay="false" action="http://www.pragmaticsw.com/TestRuns_Add" name="TestRuns_Add" bindingOperationName="TestRuns_Add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="32d57947-2d38-4840-b714-b7667befbebffileName">TestRuns_Add</con:setting>
+  </con:settings>
+  <con:call id="975a2b49-479a-441b-89d1-d93a330adc18" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:TestRuns_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:TestRun>\r
+            <prag:TestRunId>?</prag:TestRunId>\r
+            <prag:TestSetId>?</prag:TestSetId>\r
+            <!--Optional:-->\r
+            <prag:TestSetName>?</prag:TestSetName>\r
+            <prag:TestConfigId>?</prag:TestConfigId>\r
+            <!--Optional:-->\r
+            <prag:ConfigurationName>?</prag:ConfigurationName>\r
+            <prag:ReleaseId>?</prag:ReleaseId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:RunByUserId>?</prag:RunByUserId>\r
+            <!--Optional:-->\r
+            <prag:RunByUserName>?</prag:RunByUserName>\r
+            <!--Optional:-->\r
+            <prag:IsSequential>?</prag:IsSequential>\r
+            <!--Optional:-->\r
+            <prag:StatusCode>?</prag:StatusCode>\r
+            <!--Optional:-->\r
+            <prag:ExecutionType>?</prag:ExecutionType>\r
+            <prag:DateStarted>?</prag:DateStarted>\r
+            <prag:DateFinished>?</prag:DateFinished>\r
+            <prag:NbrTests>?</prag:NbrTests>\r
+            <prag:NbrPassed>?</prag:NbrPassed>\r
+            <prag:NbrFailed>?</prag:NbrFailed>\r
+            <prag:NbrBlocked>?</prag:NbrBlocked>\r
+            <prag:NbrAwaitingRun>?</prag:NbrAwaitingRun>\r
+            <prag:RunTime>?</prag:RunTime>\r
+            <!--Optional:-->\r
+            <prag:RunTimeFormated>?</prag:RunTimeFormated>\r
+            <!--Optional:-->\r
+            <prag:ReleaseName>?</prag:ReleaseName>\r
+            <!--Optional:-->\r
+            <prag:TestId>0</prag:TestId>\r
+            <!--Optional:-->\r
+            <prag:HostId>0</prag:HostId>\r
+         </prag:TestRun>\r
+         <!--Optional:-->\r
+         <prag:SendEmailAlert>?</prag:SendEmailAlert>\r
+      </prag:TestRuns_Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/TestRuns_AddRequest"/>
+  </con:call>
+</con:operation>

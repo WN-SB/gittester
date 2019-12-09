@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f57c7030-3ebb-4a5e-8e7f-6741e8a9377f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="AutomationRuns_Add TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f57c7030-3ebb-4a5e-8e7f-6741e8a9377ffileName">AutomationRuns_Add-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="f86cab05-375c-4bfb-b972-7c09420b69d2" name="AutomationRuns_Add">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>AutomationRuns_Add</con:operation>
+      <con:request name="AutomationRuns_Add" id="e4e94bd7-0a1c-46a5-bd04-7afa11b6a8f0">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:AutomationRuns_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:AutomationRun>\r
+            <prag:AutomationRunId>?</prag:AutomationRunId>\r
+            <prag:AutomationTestItemId>?</prag:AutomationTestItemId>\r
+            <prag:AutomationHostId>?</prag:AutomationHostId>\r
+            <!--Optional:-->\r
+            <prag:Status>?</prag:Status>\r
+            <!--Optional:-->\r
+            <prag:FullTestName>?</prag:FullTestName>\r
+            <prag:NbrTests>?</prag:NbrTests>\r
+            <prag:NbrPassed>?</prag:NbrPassed>\r
+            <prag:NbrFailed>?</prag:NbrFailed>\r
+            <prag:DurationInSecs>?</prag:DurationInSecs>\r
+            <!--Optional:-->\r
+            <prag:AutomationHostName>?</prag:AutomationHostName>\r
+            <!--Optional:-->\r
+            <prag:HostName>?</prag:HostName>\r
+            <prag:FileId>?</prag:FileId>\r
+            <prag:StartTime>?</prag:StartTime>\r
+            <prag:EndTime>?</prag:EndTime>\r
+            <prag:CreateUserId>?</prag:CreateUserId>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+            <!--Optional:-->\r
+            <prag:ChildFullPath>?</prag:ChildFullPath>\r
+            <!--Optional:-->\r
+            <prag:ParentFullPath>?</prag:ParentFullPath>\r
+            <!--Optional:-->\r
+            <prag:AutomationType>?</prag:AutomationType>\r
+         </prag:AutomationRun>\r
+      </prag:AutomationRuns_Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/AutomationRuns_Add"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

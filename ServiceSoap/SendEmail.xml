@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e998a7d8-b6c3-4a02-a875-40626bcad1c0" isOneWay="false" action="http://www.pragmaticsw.com/SendEmail" name="SendEmail" bindingOperationName="SendEmail" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e998a7d8-b6c3-4a02-a875-40626bcad1c0fileName">SendEmail</con:setting>
+  </con:settings>
+  <con:call id="741183f1-9915-4909-b307-5795fbf3aedb" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:SendEmail>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:From>?</prag:From>\r
+         <!--Optional:-->\r
+         <prag:To>?</prag:To>\r
+         <!--Optional:-->\r
+         <prag:CC>?</prag:CC>\r
+         <!--Optional:-->\r
+         <prag:Subject>?</prag:Subject>\r
+         <!--Optional:-->\r
+         <prag:EmailBody>?</prag:EmailBody>\r
+      </prag:SendEmail>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/SendEmail"/>
+  </con:call>
+</con:operation>

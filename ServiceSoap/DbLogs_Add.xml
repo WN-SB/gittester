@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="723d47c8-1514-4cc2-86fb-ae1e3869132a" isOneWay="false" action="http://www.pragmaticsw.com/DbLogs_Add" name="DbLogs_Add" bindingOperationName="DbLogs_Add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="723d47c8-1514-4cc2-86fb-ae1e3869132afileName">DbLogs_Add</con:setting>
+  </con:settings>
+  <con:call id="744792d6-f2d4-40f3-9698-e59b1cf40dbd" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:DbLogs_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:DbLog>\r
+            <!--Optional:-->\r
+            <prag:SeverityCode>?</prag:SeverityCode>\r
+            <!--Optional:-->\r
+            <prag:ErrSource>?</prag:ErrSource>\r
+            <prag:ErrNumber>?</prag:ErrNumber>\r
+            <!--Optional:-->\r
+            <prag:Description>?</prag:Description>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:UserName>?</prag:UserName>\r
+         </prag:DbLog>\r
+      </prag:DbLogs_Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/DbLogs_Add"/>
+  </con:call>
+</con:operation>

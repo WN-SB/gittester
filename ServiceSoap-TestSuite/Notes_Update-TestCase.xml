@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="7fa209ab-be9d-4089-abff-3f86957e316f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Notes_Update TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7fa209ab-be9d-4089-abff-3f86957e316ffileName">Notes_Update-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="9ecafae4-016b-4b6f-bd02-b8e7ce49cb0c" name="Notes_Update">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>Notes_Update</con:operation>
+      <con:request name="Notes_Update" id="f83a10ba-5731-45e7-9c92-2fff5458a514">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:Notes_Update>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Note>\r
+            <prag:FKId>?</prag:FKId>\r
+            <!--Optional:-->\r
+            <prag:EntityCode>?</prag:EntityCode>\r
+            <!--Optional:-->\r
+            <prag:Description>?</prag:Description>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+            <prag:NotesId>?</prag:NotesId>\r
+            <!--Optional:-->\r
+            <prag:NotesTypeCode>?</prag:NotesTypeCode>\r
+            <prag:Seq>?</prag:Seq>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <!--Optional:-->\r
+            <prag:UserName>?</prag:UserName>\r
+            <prag:OriginalId>?</prag:OriginalId>\r
+         </prag:Note>\r
+      </prag:Notes_Update>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/Notes_Update"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

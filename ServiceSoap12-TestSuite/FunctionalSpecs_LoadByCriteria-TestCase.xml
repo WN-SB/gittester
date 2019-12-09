@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="771ff523-745a-4e03-9c58-b68d79131421" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="FunctionalSpecs_LoadByCriteria TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="771ff523-745a-4e03-9c58-b68d79131421fileName">FunctionalSpecs_LoadByCriteria-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="4146b187-45c2-4c4a-b511-7fee5bfafb69" name="FunctionalSpecs_LoadByCriteria">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>FunctionalSpecs_LoadByCriteria</con:operation>
+      <con:request name="FunctionalSpecs_LoadByCriteria" id="1db525c7-6541-4910-ae03-7c4dcf703b47">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:FunctionalSpecs_LoadByCriteria>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Condition>?</prag:Condition>\r
+         <!--Optional:-->\r
+         <prag:Sorting>?</prag:Sorting>\r
+         <prag:PageSize>?</prag:PageSize>\r
+         <prag:PageNumber>?</prag:PageNumber>\r
+      </prag:FunctionalSpecs_LoadByCriteria>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/FunctionalSpecs_LoadByCriteriaRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

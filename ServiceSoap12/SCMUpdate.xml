@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="cd5bee3b-66a2-4b50-89ef-bace268c3ae7" isOneWay="false" action="http://www.pragmaticsw.com/SCMUpdate" name="SCMUpdate" bindingOperationName="SCMUpdate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cd5bee3b-66a2-4b50-89ef-bace268c3ae7fileName">SCMUpdate</con:setting>
+  </con:settings>
+  <con:call id="b8f4dc40-6dc3-43e5-b4f9-6e549ee4f927" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:SCMUpdate>\r
+         <!--Optional:-->\r
+         <prag:userId>?</prag:userId>\r
+         <!--Optional:-->\r
+         <prag:passCode>?</prag:passCode>\r
+         <!--Optional:-->\r
+         <prag:appCode>?</prag:appCode>\r
+         <!--Optional:-->\r
+         <prag:commentText>?</prag:commentText>\r
+         <!--Optional:-->\r
+         <prag:author>?</prag:author>\r
+         <!--Optional:-->\r
+         <prag:revision>?</prag:revision>\r
+         <!--Optional:-->\r
+         <prag:filePath>?</prag:filePath>\r
+      </prag:SCMUpdate>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/SCMUpdateRequest"/>
+  </con:call>
+</con:operation>

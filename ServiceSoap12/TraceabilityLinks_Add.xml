@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="0404ad51-a7e1-4836-8bdb-29b149833fda" isOneWay="false" action="http://www.pragmaticsw.com/TraceabilityLinks_Add" name="TraceabilityLinks_Add" bindingOperationName="TraceabilityLinks_Add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0404ad51-a7e1-4836-8bdb-29b149833fdafileName">TraceabilityLinks_Add</con:setting>
+  </con:settings>
+  <con:call id="3dfe199c-cbbb-4051-a822-39ca23023366" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:TraceabilityLinks_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:TraceabilityLink>\r
+            <prag:LinkId>?</prag:LinkId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <!--Optional:-->\r
+            <prag:EntityCode>?</prag:EntityCode>\r
+            <prag:FKId>?</prag:FKId>\r
+            <!--Optional:-->\r
+            <prag:LinkedEntityCode>?</prag:LinkedEntityCode>\r
+            <prag:LinkedFKId>?</prag:LinkedFKId>\r
+            <!--Optional:-->\r
+            <prag:Status>?</prag:Status>\r
+            <!--Optional:-->\r
+            <prag:Title>?</prag:Title>\r
+            <!--Optional:-->\r
+            <prag:LinkType>?</prag:LinkType>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+         </prag:TraceabilityLink>\r
+      </prag:TraceabilityLinks_Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/TraceabilityLinks_AddRequest"/>
+  </con:call>
+</con:operation>

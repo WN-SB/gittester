@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e6d3b1e3-c5b8-4e3f-8d7d-c78f8a622137" isOneWay="false" action="http://www.pragmaticsw.com/CustomFields_Add" name="CustomFields_Add" bindingOperationName="CustomFields_Add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e6d3b1e3-c5b8-4e3f-8d7d-c78f8a622137fileName">CustomFields_Add</con:setting>
+  </con:settings>
+  <con:call id="00b69e4b-6850-4dcb-bb98-042262fa7152" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:CustomFields_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:CustomField>\r
+            <!--Optional:-->\r
+            <prag:EntityCode>?</prag:EntityCode>\r
+            <prag:CustomFieldNbr>?</prag:CustomFieldNbr>\r
+            <!--Optional:-->\r
+            <prag:FieldName>?</prag:FieldName>\r
+            <!--Optional:-->\r
+            <prag:FieldType>?</prag:FieldType>\r
+            <prag:FieldSize>?</prag:FieldSize>\r
+            <!--Optional:-->\r
+            <prag:IsRequired>?</prag:IsRequired>\r
+         </prag:CustomField>\r
+      </prag:CustomFields_Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/CustomFields_AddRequest"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="35b7d7a9-1120-47f4-bf1d-c2a48e68619a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="AutomationHosts_Update TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="35b7d7a9-1120-47f4-bf1d-c2a48e68619afileName">AutomationHosts_Update-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="ddb8846f-8e52-4ddc-8017-995dce8dcd3a" name="AutomationHosts_Update">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>AutomationHosts_Update</con:operation>
+      <con:request name="AutomationHosts_Update" id="da7944a3-961d-4260-9400-736eff89048a">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:AutomationHosts_Update>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:AutomationHost>\r
+            <prag:AutomationHostId>?</prag:AutomationHostId>\r
+            <!--Optional:-->\r
+            <prag:HostName>?</prag:HostName>\r
+            <!--Optional:-->\r
+            <prag:Description>?</prag:Description>\r
+            <prag:CreateUserId>?</prag:CreateUserId>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+         </prag:AutomationHost>\r
+      </prag:AutomationHosts_Update>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/AutomationHosts_Update"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

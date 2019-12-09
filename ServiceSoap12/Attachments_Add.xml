@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="43cb1c16-43f2-4375-a641-67403dcd5bca" isOneWay="false" action="http://www.pragmaticsw.com/Attachments_Add" name="Attachments_Add" bindingOperationName="Attachments_Add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="43cb1c16-43f2-4375-a641-67403dcd5bcafileName">Attachments_Add</con:setting>
+  </con:settings>
+  <con:call id="43ee84df-d9e9-4ff6-9c53-be3f1c3658a8" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:Attachments_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Attachment>\r
+            <prag:AttachmentId>?</prag:AttachmentId>\r
+            <prag:FKId>?</prag:FKId>\r
+            <!--Optional:-->\r
+            <prag:EntityCode>?</prag:EntityCode>\r
+            <!--Optional:-->\r
+            <prag:AttachmentTypeCode>?</prag:AttachmentTypeCode>\r
+            <prag:Seq>?</prag:Seq>\r
+            <!--Optional:-->\r
+            <prag:FileName>?</prag:FileName>\r
+            <!--Optional:-->\r
+            <prag:FileNameZipped>?</prag:FileNameZipped>\r
+            <!--Optional:-->\r
+            <prag:Title>?</prag:Title>\r
+            <!--Optional:-->\r
+            <prag:Comments>?</prag:Comments>\r
+            <!--Optional:-->\r
+            <prag:FileFormatCode>?</prag:FileFormatCode>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <!--Optional:-->\r
+            <prag:UserName>?</prag:UserName>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:OriginalId>?</prag:OriginalId>\r
+         </prag:Attachment>\r
+         <!--Optional:-->\r
+         <prag:File>cid:452006382461</prag:File>\r
+         <prag:SaveOriginal>?</prag:SaveOriginal>\r
+      </prag:Attachments_Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/Attachments_AddRequest"/>
+  </con:call>
+</con:operation>

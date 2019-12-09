@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="0756577e-ff8e-4c92-9c01-7b13915ddc94" isOneWay="false" action="http://www.pragmaticsw.com/Folders_Update" name="Folders_Update" bindingOperationName="Folders_Update" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0756577e-ff8e-4c92-9c01-7b13915ddc94fileName">Folders_Update</con:setting>
+  </con:settings>
+  <con:call id="b4a5879f-c7b9-43f6-9420-235aa35355da" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:Folders_Update>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Folder>\r
+            <prag:FolderId>?</prag:FolderId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <!--Optional:-->\r
+            <prag:FolderName>?</prag:FolderName>\r
+            <!--Optional:-->\r
+            <prag:Description>?</prag:Description>\r
+            <!--Optional:-->\r
+            <prag:EntityCode>?</prag:EntityCode>\r
+            <!--Optional:-->\r
+            <prag:IsPublic>?</prag:IsPublic>\r
+            <prag:OwnerUserId>?</prag:OwnerUserId>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <!--Optional:-->\r
+            <prag:ParentName>?</prag:ParentName>\r
+            <!--Optional:-->\r
+            <prag:IsActive>?</prag:IsActive>\r
+            <!--Optional:-->\r
+            <prag:IsVersion>?</prag:IsVersion>\r
+            <!--Optional:-->\r
+            <prag:FullFolderName>?</prag:FullFolderName>\r
+            <!--Optional:-->\r
+            <prag:OwnerUserName>?</prag:OwnerUserName>\r
+            <!--Optional:-->\r
+            <prag:NotesDescription>?</prag:NotesDescription>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <!--Optional:-->\r
+            <prag:UserName>?</prag:UserName>\r
+         </prag:Folder>\r
+      </prag:Folders_Update>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/Folders_UpdateRequest"/>
+  </con:call>
+</con:operation>

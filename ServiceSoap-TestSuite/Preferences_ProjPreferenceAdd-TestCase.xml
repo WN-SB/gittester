@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e5bcafcd-7d5c-4e50-94d8-4cf698072763" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Preferences_ProjPreferenceAdd TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e5bcafcd-7d5c-4e50-94d8-4cf698072763fileName">Preferences_ProjPreferenceAdd-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="aae3c1b4-cd6b-4933-b87e-9bd49c29d908" name="Preferences_ProjPreferenceAdd">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>Preferences_ProjPreferenceAdd</con:operation>
+      <con:request name="Preferences_ProjPreferenceAdd" id="0994f982-5a46-469a-85d3-26df8cfe620b">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:Preferences_ProjPreferenceAdd>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Preference>\r
+            <!--Optional:-->\r
+            <prag:Code>?</prag:Code>\r
+            <!--Optional:-->\r
+            <prag:Value>?</prag:Value>\r
+         </prag:Preference>\r
+      </prag:Preferences_ProjPreferenceAdd>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/Preferences_ProjPreferenceAdd"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

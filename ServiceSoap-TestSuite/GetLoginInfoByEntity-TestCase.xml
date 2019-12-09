@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="ae63e70b-1342-479d-9d60-6fd1cc0e1aec" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetLoginInfoByEntity TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ae63e70b-1342-479d-9d60-6fd1cc0e1aecfileName">GetLoginInfoByEntity-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="129976df-ad50-41be-8fc9-32988d07aa3e" name="GetLoginInfoByEntity">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>GetLoginInfoByEntity</con:operation>
+      <con:request name="GetLoginInfoByEntity" id="04a0c516-ded2-4e22-b2ec-b7b086b96ee9">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:GetLoginInfoByEntity>\r
+         <!--Optional:-->\r
+         <prag:AppCode>?</prag:AppCode>\r
+         <!--Optional:-->\r
+         <prag:Email>?</prag:Email>\r
+         <!--Optional:-->\r
+         <prag:Password>?</prag:Password>\r
+         <!--Optional:-->\r
+         <prag:EntityCode>?</prag:EntityCode>\r
+      </prag:GetLoginInfoByEntity>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/GetLoginInfoByEntity"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

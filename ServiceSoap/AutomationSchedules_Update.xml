@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="18c550c1-976d-4975-b1b6-d73c539331d7" isOneWay="false" action="http://www.pragmaticsw.com/AutomationSchedules_Update" name="AutomationSchedules_Update" bindingOperationName="AutomationSchedules_Update" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="18c550c1-976d-4975-b1b6-d73c539331d7fileName">AutomationSchedules_Update</con:setting>
+  </con:settings>
+  <con:call id="ff683adb-9782-495f-b9dd-ab800c98b6e9" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:AutomationSchedules_Update>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:AutomationSchedule>\r
+            <prag:AutomationScheduleId>?</prag:AutomationScheduleId>\r
+            <prag:AutomationTestItemId>?</prag:AutomationTestItemId>\r
+            <prag:DateBegin>?</prag:DateBegin>\r
+            <prag:DateEnd>?</prag:DateEnd>\r
+            <prag:DaysRun>?</prag:DaysRun>\r
+            <!--Optional:-->\r
+            <prag:TimeRun>?</prag:TimeRun>\r
+            <!--Optional:-->\r
+            <prag:Status>?</prag:Status>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:CreateUserId>?</prag:CreateUserId>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+            <prag:RunASAP>?</prag:RunASAP>\r
+            <!--Optional:-->\r
+            <prag:TestName>?</prag:TestName>\r
+            <!--Optional:-->\r
+            <prag:TestType>?</prag:TestType>\r
+            <!--Optional:-->\r
+            <prag:AutomationType>?</prag:AutomationType>\r
+            <!--Optional:-->\r
+            <prag:SuitePath>?</prag:SuitePath>\r
+         </prag:AutomationSchedule>\r
+      </prag:AutomationSchedules_Update>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/AutomationSchedules_Update"/>
+  </con:call>
+</con:operation>

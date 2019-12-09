@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="57aa707e-d4b3-4900-8355-bbeaa57744fc" isOneWay="false" action="http://www.pragmaticsw.com/Preferences_ProjPreferenceAdd" name="Preferences_ProjPreferenceAdd" bindingOperationName="Preferences_ProjPreferenceAdd" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="57aa707e-d4b3-4900-8355-bbeaa57744fcfileName">Preferences_ProjPreferenceAdd</con:setting>
+  </con:settings>
+  <con:call id="7f83477c-bb09-4bbd-9101-27ec1d42d95b" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:Preferences_ProjPreferenceAdd>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Preference>\r
+            <!--Optional:-->\r
+            <prag:Code>?</prag:Code>\r
+            <!--Optional:-->\r
+            <prag:Value>?</prag:Value>\r
+         </prag:Preference>\r
+      </prag:Preferences_ProjPreferenceAdd>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/Preferences_ProjPreferenceAddRequest"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="7c301b59-b6cb-45be-8b11-2f6d06dab384" isOneWay="false" action="http://www.pragmaticsw.com/GetLoginInfoByEntity" name="GetLoginInfoByEntity" bindingOperationName="GetLoginInfoByEntity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7c301b59-b6cb-45be-8b11-2f6d06dab384fileName">GetLoginInfoByEntity</con:setting>
+  </con:settings>
+  <con:call id="e8c3a3e4-5b18-4baa-b793-01c605a3af08" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:GetLoginInfoByEntity>\r
+         <!--Optional:-->\r
+         <prag:AppCode>?</prag:AppCode>\r
+         <!--Optional:-->\r
+         <prag:Email>?</prag:Email>\r
+         <!--Optional:-->\r
+         <prag:Password>?</prag:Password>\r
+         <!--Optional:-->\r
+         <prag:EntityCode>?</prag:EntityCode>\r
+      </prag:GetLoginInfoByEntity>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/GetLoginInfoByEntityRequest"/>
+  </con:call>
+</con:operation>

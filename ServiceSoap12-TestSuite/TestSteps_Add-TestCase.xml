@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="19850b16-05b1-460e-ab09-4cb72f999840" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestSteps_Add TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="19850b16-05b1-460e-ab09-4cb72f999840fileName">TestSteps_Add-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="f2f18000-a199-4487-8725-96097387d48d" name="TestSteps_Add">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>TestSteps_Add</con:operation>
+      <con:request name="TestSteps_Add" id="901079c3-2239-43f0-82e0-073a881abb58">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:TestSteps_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:TestStep>\r
+            <prag:TestId>?</prag:TestId>\r
+            <prag:TestStepId>?</prag:TestStepId>\r
+            <!--Optional:-->\r
+            <prag:Title>?</prag:Title>\r
+            <prag:Seq>?</prag:Seq>\r
+            <!--Optional:-->\r
+            <prag:IsStoppedOnFail>?</prag:IsStoppedOnFail>\r
+            <!--Optional:-->\r
+            <prag:Step>?</prag:Step>\r
+            <!--Optional:-->\r
+            <prag:ExpectedResult>?</prag:ExpectedResult>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+            <prag:CreateUserId>?</prag:CreateUserId>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <!--Optional:-->\r
+            <prag:ScriptName>?</prag:ScriptName>\r
+            <prag:NbrFiles>?</prag:NbrFiles>\r
+            <prag:ScriptSourceId>?</prag:ScriptSourceId>\r
+         </prag:TestStep>\r
+         <!--Optional:-->\r
+         <prag:SendEmailAlert>?</prag:SendEmailAlert>\r
+      </prag:TestSteps_Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/TestSteps_AddRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

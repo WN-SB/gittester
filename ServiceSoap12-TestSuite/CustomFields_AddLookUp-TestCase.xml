@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="85a7c43a-b757-42ea-9f8b-db5f79aa4b9f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="CustomFields_AddLookUp TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="85a7c43a-b757-42ea-9f8b-db5f79aa4b9ffileName">CustomFields_AddLookUp-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="48908023-ce6e-4312-9333-e4a3e9385788" name="CustomFields_AddLookUp">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>CustomFields_AddLookUp</con:operation>
+      <con:request name="CustomFields_AddLookUp" id="2de7f5eb-904c-4c2c-9d96-c946e1671fed">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:CustomFields_AddLookUp>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:CustomField>\r
+            <!--Optional:-->\r
+            <prag:EntityCode>?</prag:EntityCode>\r
+            <prag:CustomFieldNbr>?</prag:CustomFieldNbr>\r
+            <!--Optional:-->\r
+            <prag:FieldName>?</prag:FieldName>\r
+            <!--Optional:-->\r
+            <prag:FieldType>?</prag:FieldType>\r
+            <prag:FieldSize>?</prag:FieldSize>\r
+            <!--Optional:-->\r
+            <prag:IsRequired>?</prag:IsRequired>\r
+         </prag:CustomField>\r
+         <!--Optional:-->\r
+         <prag:LookUpsValues>?</prag:LookUpsValues>\r
+      </prag:CustomFields_AddLookUp>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/CustomFields_AddLookUpRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

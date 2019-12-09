@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="030eed0f-8b79-4d2a-9b72-2ec143f16548" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="EntityMetadata_GetAll TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="030eed0f-8b79-4d2a-9b72-2ec143f16548fileName">EntityMetadata_GetAll-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="2c31a984-59ed-4fe0-9f45-b8d0c636b08b" name="EntityMetadata_GetAll">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>EntityMetadata_GetAll</con:operation>
+      <con:request name="EntityMetadata_GetAll" id="878f6758-82bf-45ec-bcec-a13f6c37cd8e">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:EntityMetadata_GetAll>\r
+         <!--Optional:-->\r
+         <prag:authenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:authenticationData>\r
+         <!--Optional:-->\r
+         <prag:formName>?</prag:formName>\r
+      </prag:EntityMetadata_GetAll>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/EntityMetadata_GetAllRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

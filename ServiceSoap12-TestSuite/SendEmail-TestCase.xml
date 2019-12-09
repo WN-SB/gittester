@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="550e2dd1-69d5-444d-8d66-f1d2a66a65e5" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SendEmail TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="550e2dd1-69d5-444d-8d66-f1d2a66a65e5fileName">SendEmail-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="2bfc7519-95c4-4978-ae92-e4144b0d84c1" name="SendEmail">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>SendEmail</con:operation>
+      <con:request name="SendEmail" id="f567d50b-7121-47aa-af49-56c7f164a67e">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:SendEmail>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:From>?</prag:From>\r
+         <!--Optional:-->\r
+         <prag:To>?</prag:To>\r
+         <!--Optional:-->\r
+         <prag:CC>?</prag:CC>\r
+         <!--Optional:-->\r
+         <prag:Subject>?</prag:Subject>\r
+         <!--Optional:-->\r
+         <prag:EmailBody>?</prag:EmailBody>\r
+      </prag:SendEmail>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/SendEmailRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

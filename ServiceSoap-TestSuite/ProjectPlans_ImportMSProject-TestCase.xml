@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f4340030-8443-47ad-bb0d-1ee5a612d45f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="ProjectPlans_ImportMSProject TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f4340030-8443-47ad-bb0d-1ee5a612d45ffileName">ProjectPlans_ImportMSProject-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="b0995ff0-3244-40f0-9d82-3cf4af747a89" name="ProjectPlans_ImportMSProject">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>ProjectPlans_ImportMSProject</con:operation>
+      <con:request name="ProjectPlans_ImportMSProject" id="ec33042f-8943-4940-b09a-b3f669c822b6">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:ProjectPlans_ImportMSProject>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:ProjectPlan>\r
+            <prag:ProjPlanId>?</prag:ProjPlanId>\r
+            <!--Optional:-->\r
+            <prag:Name>?</prag:Name>\r
+            <prag:OwnerUserId>?</prag:OwnerUserId>\r
+            <!--Optional:-->\r
+            <prag:OwnerUserName>?</prag:OwnerUserName>\r
+            <prag:AssigneeUserId>?</prag:AssigneeUserId>\r
+            <!--Optional:-->\r
+            <prag:AssignedToName>?</prag:AssignedToName>\r
+            <!--Optional:-->\r
+            <prag:StatusCode>?</prag:StatusCode>\r
+            <prag:ActPctComplete>?</prag:ActPctComplete>\r
+            <!--Optional:-->\r
+            <prag:Tasks>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:PPTask>\r
+                  <prag:TaskId>?</prag:TaskId>\r
+                  <!--Optional:-->\r
+                  <prag:TaskName>?</prag:TaskName>\r
+                  <!--Optional:-->\r
+                  <prag:IsParent>?</prag:IsParent>\r
+                  <!--Optional:-->\r
+                  <prag:Description>?</prag:Description>\r
+                  <prag:Indent>?</prag:Indent>\r
+                  <prag:EstStart>?</prag:EstStart>\r
+                  <prag:EstFinish>?</prag:EstFinish>\r
+                  <prag:AssigneeUserId>?</prag:AssigneeUserId>\r
+                  <!--Optional:-->\r
+                  <prag:AssignedToName>?</prag:AssignedToName>\r
+                  <prag:EstHrs>?</prag:EstHrs>\r
+                  <prag:EstCostInt>?</prag:EstCostInt>\r
+                  <prag:ActStart>?</prag:ActStart>\r
+                  <prag:ActHrs>?</prag:ActHrs>\r
+                  <!--Optional:-->\r
+                  <prag:PredNum>?</prag:PredNum>\r
+                  <prag:SeqNum>?</prag:SeqNum>\r
+                  <prag:Work>?</prag:Work>\r
+               </prag:PPTask>\r
+            </prag:Tasks>\r
+            <!--Optional:-->\r
+            <prag:Resources>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:PPResource>\r
+                  <prag:UserId>?</prag:UserId>\r
+                  <!--Optional:-->\r
+                  <prag:PersonName>?</prag:PersonName>\r
+                  <prag:StandardRate>?</prag:StandardRate>\r
+               </prag:PPResource>\r
+            </prag:Resources>\r
+         </prag:ProjectPlan>\r
+      </prag:ProjectPlans_ImportMSProject>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ProjectPlans_ImportMSProject"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="c79dd405-6997-4651-b5fa-032227054e19" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Attachments_Add TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c79dd405-6997-4651-b5fa-032227054e19fileName">Attachments_Add-TestCase</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="DataSource" id="5a4e8ce5-2346-4335-8967-68290d36687d">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-2</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-4</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-6</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-7</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-8</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-9</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-10</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-11</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-12</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-13</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-14</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-15</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-16</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-17</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-18</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-19</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-20</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-21</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 1-22</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-2</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-4</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-6</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-7</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-8</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-9</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-10</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-11</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-12</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-13</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-14</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-15</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-16</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-17</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-18</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-19</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-20</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-21</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 2-22</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-2</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-4</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-6</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-7</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-8</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-9</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-10</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-11</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-12</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-13</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-14</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-15</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-16</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-17</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-18</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-19</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-20</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-21</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 3-22</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-2</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-4</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-6</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-7</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-8</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-9</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-10</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-11</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-12</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-13</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-14</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-15</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-16</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-17</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-18</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-19</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-20</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-21</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 4-22</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-2</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-4</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-6</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-7</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-8</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-9</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-10</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-11</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-12</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-13</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-14</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-15</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-16</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-17</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-18</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-19</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-20</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-21</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Sample value 5-22</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <recognizeAsPlainText>true</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>AppCode</con:property>
+      <con:property>DeptId</con:property>
+      <con:property>ProjId</con:property>
+      <con:property>UserId</con:property>
+      <con:property>PassCode</con:property>
+      <con:property>ProjIds</con:property>
+      <con:property>AttachmentId</con:property>
+      <con:property>FKId</con:property>
+      <con:property>EntityCode</con:property>
+      <con:property>AttachmentTypeCode</con:property>
+      <con:property>Seq</con:property>
+      <con:property>FileName</con:property>
+      <con:property>FileNameZipped</con:property>
+      <con:property>Title</con:property>
+      <con:property>Comments</con:property>
+      <con:property>FileFormatCode</con:property>
+      <con:property>DateCreated</con:property>
+      <con:property>DateUpdated</con:property>
+      <con:property>UpdateUserId</con:property>
+      <con:property>UserName</con:property>
+      <con:property>OriginalId</con:property>
+      <con:property>File</con:property>
+      <con:property>SaveOriginal</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="e441b669-a7d8-473b-9d61-da9d813f5323" name="Attachments_Add">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>Attachments_Add</con:operation>
+      <con:request name="Attachments_Add" id="ed8ab1e6-06c7-4b40-8658-1bac66cee1bb">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<?xml version="1.0" encoding="UTF-8"?>\r
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header />\r
+   <soapenv:Body>\r
+    <prag:Attachments_Add>\r
+  <prag:AuthenticationData>\r
+      <prag:AppCode>agSP</prag:AppCode>\r
+      <prag:DeptId>78534</prag:DeptId>\r
+      <prag:ProjId>86763</prag:ProjId>\r
+      <prag:UserId>174785</prag:UserId>\r
+      <prag:PassCode>Bear123</prag:PassCode>\r
+   </prag:AuthenticationData>\r
+    <prag:Attachment>\r
+      <prag:FKId>4244808</prag:FKId>\r
+     <prag:EntityCode>Bugs</prag:EntityCode>\r
+     <prag:Seq>2</prag:Seq><prag:FileName>test.txt</prag:FileName><prag:ProjId>86763</prag:ProjId>\r
+  </prag:Attachment>\r
+   <prag:File>cid:test.txt</prag:File>\r
+   <prag:SaveOriginal>true</prag:SaveOriginal>\r
+</prag:Attachments_Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>\r]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:attachment>
+          <con:name>test.txt</con:name>
+          <con:contentType>text/plain</con:contentType>
+          <con:size>21</con:size>
+          <con:contentId>test.txt</con:contentId>
+          <con:part>test.txt</con:part>
+          <con:data>UEsDBBQACAgIAJBzlk4AAAAAAAAAAAAAAAAIAAAAdGVzdC50eHQLycgsVgCixDwFx5KSxOSM3NS8EgBQSwcI4A7ImRUAAAAVAAAAUEsBAhQAFAAICAgAkHOWTuAOyJkVAAAAFQAAAAgAAAAAAAAAAAAAAAAAAAAAAHRlc3QudHh0UEsFBgAAAAABAAEANgAAAEsAAAAAAA==</con:data>
+          <con:id>397639b2-a965-457b-81bb-43d47a969bb2</con:id>
+        </con:attachment>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="http://www.pragmaticsw.com/Attachments_Add" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="0a901395-b308-46f8-9f9c-76923693a963">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>Attachments_Add</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

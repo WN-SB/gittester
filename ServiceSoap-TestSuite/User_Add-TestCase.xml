@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="6b4090da-2028-4ccd-90c1-fdb96a2ed691" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="User_Add TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6b4090da-2028-4ccd-90c1-fdb96a2ed691fileName">User_Add-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="455e1717-e291-4834-9ab4-28aecfcfba7a" name="User_Add">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>User_Add</con:operation>
+      <con:request name="User_Add" id="fe077413-4cbf-4f55-ad90-9da1a326ff73">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:User_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:User>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:FirstName>?</prag:FirstName>\r
+            <!--Optional:-->\r
+            <prag:LastName>?</prag:LastName>\r
+            <!--Optional:-->\r
+            <prag:Email>?</prag:Email>\r
+            <!--Optional:-->\r
+            <prag:SecurityGroup>?</prag:SecurityGroup>\r
+            <!--Optional:-->\r
+            <prag:Password>?</prag:Password>\r
+            <!--Optional:-->\r
+            <prag:TimeZone>?</prag:TimeZone>\r
+         </prag:User>\r
+      </prag:User_Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/User_Add"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

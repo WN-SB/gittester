@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="197e3aa3-58b4-4691-b2ec-ed23fecd0b54" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="PerfLogs_Add TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="197e3aa3-58b4-4691-b2ec-ed23fecd0b54fileName">PerfLogs_Add-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="ae5d8f2c-b9df-4204-9e54-1f16cecb685d" name="PerfLogs_Add">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>PerfLogs_Add</con:operation>
+      <con:request name="PerfLogs_Add" id="1c7ac43f-8f83-4c6e-aeff-6ac0e05c0ad3">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:PerfLogs_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:PerfLog>\r
+            <!--Optional:-->\r
+            <prag:Task>?</prag:Task>\r
+            <prag:BeginDateTime>?</prag:BeginDateTime>\r
+            <prag:EndDateTime>?</prag:EndDateTime>\r
+         </prag:PerfLog>\r
+      </prag:PerfLogs_Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/PerfLogs_Add"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

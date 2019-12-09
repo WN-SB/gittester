@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="190259fd-59bd-466f-99d1-e6a857e65522" isOneWay="false" action="http://www.pragmaticsw.com/AutomationRuns_Update" name="AutomationRuns_Update" bindingOperationName="AutomationRuns_Update" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="190259fd-59bd-466f-99d1-e6a857e65522fileName">AutomationRuns_Update</con:setting>
+  </con:settings>
+  <con:call id="84cfca5d-49e6-4944-84b7-58efada2efc8" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:AutomationRuns_Update>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:AutomationRun>\r
+            <prag:AutomationRunId>?</prag:AutomationRunId>\r
+            <prag:AutomationTestItemId>?</prag:AutomationTestItemId>\r
+            <prag:AutomationHostId>?</prag:AutomationHostId>\r
+            <!--Optional:-->\r
+            <prag:Status>?</prag:Status>\r
+            <!--Optional:-->\r
+            <prag:FullTestName>?</prag:FullTestName>\r
+            <prag:NbrTests>?</prag:NbrTests>\r
+            <prag:NbrPassed>?</prag:NbrPassed>\r
+            <prag:NbrFailed>?</prag:NbrFailed>\r
+            <prag:DurationInSecs>?</prag:DurationInSecs>\r
+            <!--Optional:-->\r
+            <prag:AutomationHostName>?</prag:AutomationHostName>\r
+            <!--Optional:-->\r
+            <prag:HostName>?</prag:HostName>\r
+            <prag:FileId>?</prag:FileId>\r
+            <prag:StartTime>?</prag:StartTime>\r
+            <prag:EndTime>?</prag:EndTime>\r
+            <prag:CreateUserId>?</prag:CreateUserId>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+            <!--Optional:-->\r
+            <prag:ChildFullPath>?</prag:ChildFullPath>\r
+            <!--Optional:-->\r
+            <prag:ParentFullPath>?</prag:ParentFullPath>\r
+            <!--Optional:-->\r
+            <prag:AutomationType>?</prag:AutomationType>\r
+         </prag:AutomationRun>\r
+      </prag:AutomationRuns_Update>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/AutomationRuns_Update"/>
+  </con:call>
+</con:operation>

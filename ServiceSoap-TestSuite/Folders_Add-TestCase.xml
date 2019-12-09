@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f7c6d668-f9cb-42a7-8283-aa95d7a2100d" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Folders_Add TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f7c6d668-f9cb-42a7-8283-aa95d7a2100dfileName">Folders_Add-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="a4c8ce38-9d95-4b5a-99f1-ab19e144adbc" name="Folders_Add">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>Folders_Add</con:operation>
+      <con:request name="Folders_Add" id="96e9cea9-2de7-4a1a-b637-159ad9309cc9">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:Folders_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Folder>\r
+            <prag:FolderId>?</prag:FolderId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <!--Optional:-->\r
+            <prag:FolderName>?</prag:FolderName>\r
+            <!--Optional:-->\r
+            <prag:Description>?</prag:Description>\r
+            <!--Optional:-->\r
+            <prag:EntityCode>?</prag:EntityCode>\r
+            <!--Optional:-->\r
+            <prag:IsPublic>?</prag:IsPublic>\r
+            <prag:OwnerUserId>?</prag:OwnerUserId>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <!--Optional:-->\r
+            <prag:ParentName>?</prag:ParentName>\r
+            <!--Optional:-->\r
+            <prag:IsActive>?</prag:IsActive>\r
+            <!--Optional:-->\r
+            <prag:IsVersion>?</prag:IsVersion>\r
+            <!--Optional:-->\r
+            <prag:FullFolderName>?</prag:FullFolderName>\r
+            <!--Optional:-->\r
+            <prag:OwnerUserName>?</prag:OwnerUserName>\r
+            <!--Optional:-->\r
+            <prag:NotesDescription>?</prag:NotesDescription>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <!--Optional:-->\r
+            <prag:UserName>?</prag:UserName>\r
+         </prag:Folder>\r
+      </prag:Folders_Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/Folders_Add"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

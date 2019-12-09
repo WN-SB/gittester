@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5219c66b-f6be-4a8b-8e02-443e5ac06b0d" isOneWay="false" action="http://www.pragmaticsw.com/TestRunItems_Update" name="TestRunItems_Update" bindingOperationName="TestRunItems_Update" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5219c66b-f6be-4a8b-8e02-443e5ac06b0dfileName">TestRunItems_Update</con:setting>
+  </con:settings>
+  <con:call id="f24ce769-82f6-434b-90f6-72026cd1f902" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:TestRunItems_Update>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:TestRunItem>\r
+            <prag:TestRunItemId>?</prag:TestRunItemId>\r
+            <prag:TestSetId>?</prag:TestSetId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:TestRunId>?</prag:TestRunId>\r
+            <prag:TestId>?</prag:TestId>\r
+            <!--Optional:-->\r
+            <prag:Title>?</prag:Title>\r
+            <prag:Version>?</prag:Version>\r
+            <prag:Seq>?</prag:Seq>\r
+            <!--Optional:-->\r
+            <prag:StatusCode>?</prag:StatusCode>\r
+            <prag:DateStarted>?</prag:DateStarted>\r
+            <prag:DateFinished>?</prag:DateFinished>\r
+            <prag:RunTime>?</prag:RunTime>\r
+            <!--Optional:-->\r
+            <prag:RunTimeFormated>?</prag:RunTimeFormated>\r
+            <!--Optional:-->\r
+            <prag:IsStoppedOnFail>?</prag:IsStoppedOnFail>\r
+            <!--Optional:-->\r
+            <prag:RunByUserName>?</prag:RunByUserName>\r
+            <!--Optional:-->\r
+            <prag:ReleaseName>?</prag:ReleaseName>\r
+            <!--Optional:-->\r
+            <prag:ConfigurationName>?</prag:ConfigurationName>\r
+            <!--Optional:-->\r
+            <prag:TestSetName>?</prag:TestSetName>\r
+            <prag:AvgRunTime>?</prag:AvgRunTime>\r
+            <!--Optional:-->\r
+            <prag:AvgRunTimeFormated>?</prag:AvgRunTimeFormated>\r
+            <!--Optional:-->\r
+            <prag:TestName>?</prag:TestName>\r
+         </prag:TestRunItem>\r
+         <!--Optional:-->\r
+         <prag:SendEmailAlert>?</prag:SendEmailAlert>\r
+      </prag:TestRunItems_Update>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/TestRunItems_UpdateRequest"/>
+  </con:call>
+</con:operation>

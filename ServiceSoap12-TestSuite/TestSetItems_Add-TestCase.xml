@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="47c7478a-32a7-4c25-9bd3-6ea6cf5d0677" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestSetItems_Add TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="47c7478a-32a7-4c25-9bd3-6ea6cf5d0677fileName">TestSetItems_Add-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="e31abaa0-1ea6-4ff8-a789-23ee3591bdca" name="TestSetItems_Add">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>TestSetItems_Add</con:operation>
+      <con:request name="TestSetItems_Add" id="42a7bfbc-5902-4044-9d79-c0415cbcfa3e">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:TestSetItems_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:TestSetItem>\r
+            <prag:TestSetItemId>?</prag:TestSetItemId>\r
+            <prag:TestSetId>?</prag:TestSetId>\r
+            <prag:TestId>?</prag:TestId>\r
+            <prag:Seq>?</prag:Seq>\r
+            <!--Optional:-->\r
+            <prag:IsActive>?</prag:IsActive>\r
+            <!--Optional:-->\r
+            <prag:IsStoppedOnFail>?</prag:IsStoppedOnFail>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+            <prag:CreateUserId>?</prag:CreateUserId>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <!--Optional:-->\r
+            <prag:FolderName>?</prag:FolderName>\r
+            <!--Optional:-->\r
+            <prag:AssignedToName>?</prag:AssignedToName>\r
+            <!--Optional:-->\r
+            <prag:UserName>?</prag:UserName>\r
+            <!--Optional:-->\r
+            <prag:OwnerName>?</prag:OwnerName>\r
+            <!--Optional:-->\r
+            <prag:LastRunByName>?</prag:LastRunByName>\r
+            <prag:Version>?</prag:Version>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:FolderId>?</prag:FolderId>\r
+            <!--Optional:-->\r
+            <prag:Title>?</prag:Title>\r
+            <!--Optional:-->\r
+            <prag:TestIsActive>?</prag:TestIsActive>\r
+            <!--Optional:-->\r
+            <prag:StatusCode>?</prag:StatusCode>\r
+            <!--Optional:-->\r
+            <prag:ExecutionType>?</prag:ExecutionType>\r
+            <!--Optional:-->\r
+            <prag:TestType>?</prag:TestType>\r
+            <!--Optional:-->\r
+            <prag:Priority>?</prag:Priority>\r
+            <!--Optional:-->\r
+            <prag:Description>?</prag:Description>\r
+            <prag:TestDateCreated>?</prag:TestDateCreated>\r
+            <prag:TestDateUpdated>?</prag:TestDateUpdated>\r
+            <prag:TestCreateUserId>?</prag:TestCreateUserId>\r
+            <prag:TestUpdateUserId>?</prag:TestUpdateUserId>\r
+            <prag:AssigneeUserId>?</prag:AssigneeUserId>\r
+            <prag:OwnerUserId>?</prag:OwnerUserId>\r
+            <prag:OriginalId>?</prag:OriginalId>\r
+            <prag:ImportId>?</prag:ImportId>\r
+            <prag:ScriptSourceId>?</prag:ScriptSourceId>\r
+            <prag:NbrFailStatus>?</prag:NbrFailStatus>\r
+            <prag:NbrPassStatus>?</prag:NbrPassStatus>\r
+            <prag:AvgRunTime>?</prag:AvgRunTime>\r
+            <!--Optional:-->\r
+            <prag:AvgRunTimeFormated>?</prag:AvgRunTimeFormated>\r
+            <prag:NbrTimesRun>?</prag:NbrTimesRun>\r
+            <prag:LastRunByUserId>?</prag:LastRunByUserId>\r
+            <prag:LastRunTestSet>?</prag:LastRunTestSet>\r
+            <!--Optional:-->\r
+            <prag:LastRunTestSetTitle>?</prag:LastRunTestSetTitle>\r
+            <prag:LastRunDate>?</prag:LastRunDate>\r
+            <!--Optional:-->\r
+            <prag:LastRunStatus>?</prag:LastRunStatus>\r
+            <prag:NbrSteps>?</prag:NbrSteps>\r
+            <!--Optional:-->\r
+            <prag:NotesDescription>?</prag:NotesDescription>\r
+            <prag:NbrEscalations>?</prag:NbrEscalations>\r
+            <prag:DateLastEscalated>?</prag:DateLastEscalated>\r
+            <prag:LastEscalationRuleId>?</prag:LastEscalationRuleId>\r
+            <!--Optional:-->\r
+            <prag:LastEscalationRule>?</prag:LastEscalationRule>\r
+            <prag:NbrFilesNotSecured>?</prag:NbrFilesNotSecured>\r
+            <prag:NbrFiles>?</prag:NbrFiles>\r
+            <prag:NbrNotes>?</prag:NbrNotes>\r
+            <prag:NbrEvents>?</prag:NbrEvents>\r
+            <!--Optional:-->\r
+            <prag:ScriptName>?</prag:ScriptName>\r
+         </prag:TestSetItem>\r
+         <!--Optional:-->\r
+         <prag:SendEmailAlert>?</prag:SendEmailAlert>\r
+      </prag:TestSetItems_Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/TestSetItems_AddRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

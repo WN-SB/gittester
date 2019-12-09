@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="2ecc4a6a-b39a-4a63-9f99-0a0eb942213d" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SCMUpdate TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2ecc4a6a-b39a-4a63-9f99-0a0eb942213dfileName">SCMUpdate-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="f9f203c6-c1c6-4079-8b09-989e7318c7f4" name="SCMUpdate">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>SCMUpdate</con:operation>
+      <con:request name="SCMUpdate" id="1d7e9e11-070f-460d-9fc3-381dc401098a">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:SCMUpdate>\r
+         <!--Optional:-->\r
+         <prag:userId>?</prag:userId>\r
+         <!--Optional:-->\r
+         <prag:passCode>?</prag:passCode>\r
+         <!--Optional:-->\r
+         <prag:appCode>?</prag:appCode>\r
+         <!--Optional:-->\r
+         <prag:commentText>?</prag:commentText>\r
+         <!--Optional:-->\r
+         <prag:author>?</prag:author>\r
+         <!--Optional:-->\r
+         <prag:revision>?</prag:revision>\r
+         <!--Optional:-->\r
+         <prag:filePath>?</prag:filePath>\r
+      </prag:SCMUpdate>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/SCMUpdateRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

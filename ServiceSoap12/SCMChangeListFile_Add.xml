@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="bc75dee1-0647-48f5-ae24-2ca985ba925a" isOneWay="false" action="http://www.pragmaticsw.com/SCMChangeListFile_Add" name="SCMChangeListFile_Add" bindingOperationName="SCMChangeListFile_Add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bc75dee1-0647-48f5-ae24-2ca985ba925afileName">SCMChangeListFile_Add</con:setting>
+  </con:settings>
+  <con:call id="f8da040e-3c67-4f48-86f5-daee930ce134" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:SCMChangeListFile_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:Comment>?</prag:Comment>\r
+         <!--Optional:-->\r
+         <prag:Revision>?</prag:Revision>\r
+         <!--Optional:-->\r
+         <prag:Author>?</prag:Author>\r
+         <!--Optional:-->\r
+         <prag:FilePath>?</prag:FilePath>\r
+         <prag:ChangeListID>?</prag:ChangeListID>\r
+      </prag:SCMChangeListFile_Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/SCMChangeListFile_AddRequest"/>
+  </con:call>
+</con:operation>

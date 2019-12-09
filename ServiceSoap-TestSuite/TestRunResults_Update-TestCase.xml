@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="2101be08-56d8-4c90-8759-a25cb9f2cd29" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestRunResults_Update TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2101be08-56d8-4c90-8759-a25cb9f2cd29fileName">TestRunResults_Update-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="12af23ff-2fbe-4551-bc9f-0cfebf1591d5" name="TestRunResults_Update">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>TestRunResults_Update</con:operation>
+      <con:request name="TestRunResults_Update" id="7e05500c-7f94-4f6c-9ee6-1c62f4873b2f">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:TestRunResults_Update>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:TestRunResult>\r
+            <prag:TestRunResultId>?</prag:TestRunResultId>\r
+            <prag:TestRunItemId>?</prag:TestRunItemId>\r
+            <prag:Seq>?</prag:Seq>\r
+            <!--Optional:-->\r
+            <prag:IsStoppedOnFail>?</prag:IsStoppedOnFail>\r
+            <!--Optional:-->\r
+            <prag:StatusCode>?</prag:StatusCode>\r
+            <!--Optional:-->\r
+            <prag:Step>?</prag:Step>\r
+            <!--Optional:-->\r
+            <prag:ExpectedResult>?</prag:ExpectedResult>\r
+            <!--Optional:-->\r
+            <prag:ActualResult>?</prag:ActualResult>\r
+            <prag:TestStepId>?</prag:TestStepId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+         </prag:TestRunResult>\r
+         <!--Optional:-->\r
+         <prag:SendEmailAlert>?</prag:SendEmailAlert>\r
+      </prag:TestRunResults_Update>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/TestRunResults_Update"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="33201351-f87d-4ca3-a705-2eaf1d031aca" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="AutomationSchedules_Add TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="33201351-f87d-4ca3-a705-2eaf1d031acafileName">AutomationSchedules_Add-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="9720eef8-d269-4667-a57b-71b61c5e0b5c" name="AutomationSchedules_Add">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>AutomationSchedules_Add</con:operation>
+      <con:request name="AutomationSchedules_Add" id="5d7d8859-2237-4677-b97f-4120ea9d136b">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:AutomationSchedules_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:AutomationSchedule>\r
+            <prag:AutomationScheduleId>?</prag:AutomationScheduleId>\r
+            <prag:AutomationTestItemId>?</prag:AutomationTestItemId>\r
+            <prag:DateBegin>?</prag:DateBegin>\r
+            <prag:DateEnd>?</prag:DateEnd>\r
+            <prag:DaysRun>?</prag:DaysRun>\r
+            <!--Optional:-->\r
+            <prag:TimeRun>?</prag:TimeRun>\r
+            <!--Optional:-->\r
+            <prag:Status>?</prag:Status>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:CreateUserId>?</prag:CreateUserId>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+            <prag:RunASAP>?</prag:RunASAP>\r
+            <!--Optional:-->\r
+            <prag:TestName>?</prag:TestName>\r
+            <!--Optional:-->\r
+            <prag:TestType>?</prag:TestType>\r
+            <!--Optional:-->\r
+            <prag:AutomationType>?</prag:AutomationType>\r
+            <!--Optional:-->\r
+            <prag:SuitePath>?</prag:SuitePath>\r
+         </prag:AutomationSchedule>\r
+      </prag:AutomationSchedules_Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/ServiceSoap/AutomationSchedules_AddRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

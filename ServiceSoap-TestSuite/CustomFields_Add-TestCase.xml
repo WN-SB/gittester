@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="2bbfa886-ad9c-4b34-96b0-a28f0bab7e4d" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="CustomFields_Add TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2bbfa886-ad9c-4b34-96b0-a28f0bab7e4dfileName">CustomFields_Add-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="0a54db64-06f6-4082-8fcb-2d1fcfc2d4e0" name="CustomFields_Add">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>CustomFields_Add</con:operation>
+      <con:request name="CustomFields_Add" id="40bced7a-de5e-46d0-af9a-d073892c3a4d">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:CustomFields_Add>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:CustomField>\r
+            <!--Optional:-->\r
+            <prag:EntityCode>?</prag:EntityCode>\r
+            <prag:CustomFieldNbr>?</prag:CustomFieldNbr>\r
+            <!--Optional:-->\r
+            <prag:FieldName>?</prag:FieldName>\r
+            <!--Optional:-->\r
+            <prag:FieldType>?</prag:FieldType>\r
+            <prag:FieldSize>?</prag:FieldSize>\r
+            <!--Optional:-->\r
+            <prag:IsRequired>?</prag:IsRequired>\r
+         </prag:CustomField>\r
+      </prag:CustomFields_Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://www.pragmaticsw.com/CustomFields_Add"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

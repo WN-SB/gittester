@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="3291a618-15a8-4d34-95bb-9bac30a3c143" isOneWay="false" action="http://www.pragmaticsw.com/TestSetItems_Update" name="TestSetItems_Update" bindingOperationName="TestSetItems_Update" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3291a618-15a8-4d34-95bb-9bac30a3c143fileName">TestSetItems_Update</con:setting>
+  </con:settings>
+  <con:call id="e7d4fc4c-3f8d-40ae-a65d-efeb00dcf662" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <prag:TestSetItems_Update>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:TestSetItem>\r
+            <prag:TestSetItemId>?</prag:TestSetItemId>\r
+            <prag:TestSetId>?</prag:TestSetId>\r
+            <prag:TestId>?</prag:TestId>\r
+            <prag:Seq>?</prag:Seq>\r
+            <!--Optional:-->\r
+            <prag:IsActive>?</prag:IsActive>\r
+            <!--Optional:-->\r
+            <prag:IsStoppedOnFail>?</prag:IsStoppedOnFail>\r
+            <prag:DateCreated>?</prag:DateCreated>\r
+            <prag:DateUpdated>?</prag:DateUpdated>\r
+            <prag:CreateUserId>?</prag:CreateUserId>\r
+            <prag:UpdateUserId>?</prag:UpdateUserId>\r
+            <!--Optional:-->\r
+            <prag:FolderName>?</prag:FolderName>\r
+            <!--Optional:-->\r
+            <prag:AssignedToName>?</prag:AssignedToName>\r
+            <!--Optional:-->\r
+            <prag:UserName>?</prag:UserName>\r
+            <!--Optional:-->\r
+            <prag:OwnerName>?</prag:OwnerName>\r
+            <!--Optional:-->\r
+            <prag:LastRunByName>?</prag:LastRunByName>\r
+            <prag:Version>?</prag:Version>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:FolderId>?</prag:FolderId>\r
+            <!--Optional:-->\r
+            <prag:Title>?</prag:Title>\r
+            <!--Optional:-->\r
+            <prag:TestIsActive>?</prag:TestIsActive>\r
+            <!--Optional:-->\r
+            <prag:StatusCode>?</prag:StatusCode>\r
+            <!--Optional:-->\r
+            <prag:ExecutionType>?</prag:ExecutionType>\r
+            <!--Optional:-->\r
+            <prag:TestType>?</prag:TestType>\r
+            <!--Optional:-->\r
+            <prag:Priority>?</prag:Priority>\r
+            <!--Optional:-->\r
+            <prag:Description>?</prag:Description>\r
+            <prag:TestDateCreated>?</prag:TestDateCreated>\r
+            <prag:TestDateUpdated>?</prag:TestDateUpdated>\r
+            <prag:TestCreateUserId>?</prag:TestCreateUserId>\r
+            <prag:TestUpdateUserId>?</prag:TestUpdateUserId>\r
+            <prag:AssigneeUserId>?</prag:AssigneeUserId>\r
+            <prag:OwnerUserId>?</prag:OwnerUserId>\r
+            <prag:OriginalId>?</prag:OriginalId>\r
+            <prag:ImportId>?</prag:ImportId>\r
+            <prag:ScriptSourceId>?</prag:ScriptSourceId>\r
+            <prag:NbrFailStatus>?</prag:NbrFailStatus>\r
+            <prag:NbrPassStatus>?</prag:NbrPassStatus>\r
+            <prag:AvgRunTime>?</prag:AvgRunTime>\r
+            <!--Optional:-->\r
+            <prag:AvgRunTimeFormated>?</prag:AvgRunTimeFormated>\r
+            <prag:NbrTimesRun>?</prag:NbrTimesRun>\r
+            <prag:LastRunByUserId>?</prag:LastRunByUserId>\r
+            <prag:LastRunTestSet>?</prag:LastRunTestSet>\r
+            <!--Optional:-->\r
+            <prag:LastRunTestSetTitle>?</prag:LastRunTestSetTitle>\r
+            <prag:LastRunDate>?</prag:LastRunDate>\r
+            <!--Optional:-->\r
+            <prag:LastRunStatus>?</prag:LastRunStatus>\r
+            <prag:NbrSteps>?</prag:NbrSteps>\r
+            <!--Optional:-->\r
+            <prag:NotesDescription>?</prag:NotesDescription>\r
+            <prag:NbrEscalations>?</prag:NbrEscalations>\r
+            <prag:DateLastEscalated>?</prag:DateLastEscalated>\r
+            <prag:LastEscalationRuleId>?</prag:LastEscalationRuleId>\r
+            <!--Optional:-->\r
+            <prag:LastEscalationRule>?</prag:LastEscalationRule>\r
+            <prag:NbrFilesNotSecured>?</prag:NbrFilesNotSecured>\r
+            <prag:NbrFiles>?</prag:NbrFiles>\r
+            <prag:NbrNotes>?</prag:NbrNotes>\r
+            <prag:NbrEvents>?</prag:NbrEvents>\r
+            <!--Optional:-->\r
+            <prag:ScriptName>?</prag:ScriptName>\r
+         </prag:TestSetItem>\r
+         <!--Optional:-->\r
+         <prag:SendEmailAlert>?</prag:SendEmailAlert>\r
+      </prag:TestSetItems_Update>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/TestSetItems_Update"/>
+  </con:call>
+</con:operation>

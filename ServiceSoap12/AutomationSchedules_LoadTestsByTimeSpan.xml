@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="54443e3d-bae8-45f4-9786-ceb8733e1c68" isOneWay="false" action="http://www.pragmaticsw.com/AutomationSchedules_LoadTestsByTimeSpan" name="AutomationSchedules_LoadTestsByTimeSpan" bindingOperationName="AutomationSchedules_LoadTestsByTimeSpan" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="54443e3d-bae8-45f4-9786-ceb8733e1c68fileName">AutomationSchedules_LoadTestsByTimeSpan</con:setting>
+  </con:settings>
+  <con:call id="ed47ee22-492e-4a6d-8867-2f0f2d7a1edf" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://soap.qacomplete.smartbear.com/psWS.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:prag="http://www.pragmaticsw.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <prag:AutomationSchedules_LoadTestsByTimeSpan>\r
+         <!--Optional:-->\r
+         <prag:AuthenticationData>\r
+            <!--Optional:-->\r
+            <prag:AppCode>?</prag:AppCode>\r
+            <prag:DeptId>?</prag:DeptId>\r
+            <prag:ProjId>?</prag:ProjId>\r
+            <prag:UserId>?</prag:UserId>\r
+            <!--Optional:-->\r
+            <prag:PassCode>?</prag:PassCode>\r
+            <!--Optional:-->\r
+            <prag:ProjIds>\r
+               <!--Zero or more repetitions:-->\r
+               <prag:int>?</prag:int>\r
+            </prag:ProjIds>\r
+         </prag:AuthenticationData>\r
+         <!--Optional:-->\r
+         <prag:AutomationType>?</prag:AutomationType>\r
+         <!--Optional:-->\r
+         <prag:AutomationHostName>?</prag:AutomationHostName>\r
+         <prag:StartDate>?</prag:StartDate>\r
+         <prag:EndDate>?</prag:EndDate>\r
+      </prag:AutomationSchedules_LoadTestsByTimeSpan>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pragmaticsw.com/ServiceSoap/AutomationSchedules_LoadTestsByTimeSpanRequest"/>
+  </con:call>
+</con:operation>
