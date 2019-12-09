@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="c7a72eaa-e1c9-4455-b25a-f5a9b4222186" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [] located at [/HelloWorld]</con:description>
+  <con:settings>
+    <con:setting id="c7a72eaa-e1c9-4455-b25a-f5a9b4222186fileName">TestCase-1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="Request 1" id="3b4f3412-1281-40e7-9232-ac3007083c58">
+    <con:settings/>
+    <con:config service="Service 1" resourcePath="/WCFREST_Basic/Service.svc/HelloWorld" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="9bca3f0c-5d8c-4a13-9f7f-d59dd07871c7" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://rapis02.aqa.com.ru/WCFREST_Basic/Service.svc/HelloWorld</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

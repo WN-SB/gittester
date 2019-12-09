@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="getArrayString" id="67b0770b-e0c9-4374-80ef-86fa2568dfb6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="67b0770b-e0c9-4374-80ef-86fa2568dfb6fileName">getArrayString</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="e167d5e4-d67f-4b02-b3c6-26e8bfba1e52" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="1c499bcf-f5e0-4938-b447-02bc76196a34" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

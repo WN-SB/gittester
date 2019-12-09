@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="5ef8d81d-9ed8-4b13-a8a3-58d221003670" created="2.6.0" activeEnvironment="Default environment" name="SOAP Project 3" resourceRoot="" updated="3.0.0" encryptionMode="Not encrypted" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="c929b13b-e4af-4026-a842-5a4f8c50eb36" created="2.7.0" activeEnvironment="Default environment" name="Project 4" resourceRoot="" updated="3.0.0" encryptionMode="Not encrypted" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="5ef8d81d-9ed8-4b13-a8a3-58d221003670fileName">SOAP-Project-3</con:setting>
+    <con:setting id="c929b13b-e4af-4026-a842-5a4f8c50eb36fileName">Project-4-readyapi-project</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:requirements/>
@@ -11,7 +11,6 @@
   <con:jmsConnectionContainer/>
   <con:oAuth2ProfileContainer/>
   <con:oAuth1ProfileContainer/>
-  <con:reporting/>
   <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
     <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
 // This code is often used for adding custom authentication to SoapUI Pro tests
@@ -41,6 +40,20 @@
 // pw.close()
 // fos.close()</con:script>
   </con:eventHandlers>
-  <con:authRepository/>
+  <con:authRepository>
+    <con:basicAuthEntry>
+      <con:name>Basic_Auth</con:name>
+      <con:type>Basic</con:type>
+      <con:username>Tester</con:username>
+      <con:password>Test_All</con:password>
+    </con:basicAuthEntry>
+    <con:ntlmAuthEntry>
+      <con:name>NTLM AUTH</con:name>
+      <con:type>NTLM</con:type>
+      <con:username>Tester</con:username>
+      <con:password>Test_All</con:password>
+    </con:ntlmAuthEntry>
+  </con:authRepository>
   <con:tags/>
+  <con:sensitiveInformation/>
 </con:soapui-project>

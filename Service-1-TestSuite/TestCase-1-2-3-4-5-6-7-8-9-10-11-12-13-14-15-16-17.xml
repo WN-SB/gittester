@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="4638568f-7166-478b-bdd7-2ef369a1ce27" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [] located at [/Stroka]</con:description>
+  <con:settings>
+    <con:setting id="4638568f-7166-478b-bdd7-2ef369a1ce27fileName">TestCase-1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="ff0f8192-1623-4f01-80ab-06c62e89da91">
+    <con:settings/>
+    <con:config service="Service 1" resourcePath="/WCFREST_Basic/Service.svc/Stroka" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="931061ad-bfa3-4f11-8cb3-0a3de0d94d77" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
